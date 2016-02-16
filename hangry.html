@@ -60,7 +60,9 @@
     }
   } else if (date.getDay() >= 1 && date.getDay() <= 4) {
     //Mon-Thurs
-    if (date.getHours() >= 3 && date.getHours() <= 7) {
+    if (date.getHours() <= 2) {
+      document.write("Go to Latenite!");
+    } else if (date.getHours() >= 3 && date.getHours() <= 7) {
       document.write("All major dining halls open at 7:30AM today.");
     } else if (date.getHours() >= 12 && date.getHours() < 13) {
       document.write("Ricker's open now! Or, ya know, Stern.");
