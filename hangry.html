@@ -7,7 +7,7 @@
   
   <h1>I'm hungry RIGHT NOW:</h1>
   
-  (Recommendations are tailored to West Campus residents.)
+  Recommendation algorithm tailored to West Campus residents: <br>
 
 <script language="JavaScript">
   var date = new Date();
@@ -15,7 +15,7 @@
     //Sunday
     if (date.getHours() <= 10) {
       document.write("Lag opens at 10AM.");
-    } else if (date.getHours() >= 11 && date.getHours() <= 1) {
+    } else if (date.getHours() >= 11 && date.getHours() <= 13) {
       document.write("Go to Ricker.");
     } else if (date.getHours() >= 17 && date.getHours() <= 19) {
       document.write("Go to Ricker.");
@@ -24,21 +24,39 @@
     }
   } else if (date.getDay() == 6) {
     //Saturday
-    if (date.getHours() <= 9) {
-      document.write("Arrillaga opens at 9:30AM.");
-    } else if (date.getHours() >= 11 && date.getHours() <= 1) {
-      document.write("Go to Wilbz!");
+      if (date.getHours() <= 9) {
+      document.write("Ricker is closed today! Arrillaga opens at 9:30AM.");
+    } else if (date.getHours() >= 11 && date.getHours() <= 13) {
+      document.write("Ricker is closed today! Go to Wilbz!");
     } else if (date.getHours() >= 17 && date.getHours() <= 19) {
-      document.write("Go to Stern!");
+      document.write("Ricker is closed today! Go to Stern!");
+    } else {
+      document.write("Ricker is closed today. Check the table below.");
+    }
+  } else if (date.getDay() >= 1 && date.getDay() <= 4) {
+    //Mon-Thurs
+    if (date.getHours() <= 7) {
+      document.write("All major dining halls open at 7:30AM today.");
+    } else if (date.getHours() >= 12 && date.getHours() <= 13) {
+      document.write("Ricker's open now! Or, ya know, Stern.");
+    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+      document.write("Ricker's open now! Or, ya know, Stern.");
+    } else if (date.getHours() >= 19 && date.getHours() <= 21) {
+      document.write("Arrillaga closes at 9PM every day. Run!");
     } else {
       document.write("Not very exciting right now. Check the table below.");
     }
-  } else if (date.getDay() == 1) {
-    if (date.getHours() < 21) {
-      document.write("Test");
-    }
   } else {
-    document.write("oops");
+    //Friday
+      if (date.getHours() <= 7) {
+      document.write("Ricker is closed today! Other dining halls open at 7:30AM.");
+    } else if (date.getHours() >= 12 && date.getHours() <= 13) {
+      document.write("Ricker is closed today! Go to Wilbz!");
+    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+      document.write("Ricker is closed today! Go to Stern!");
+    } else {
+      document.write("Ricker is closed today. Check the table below.");
+    }
   }
   
 </script>
@@ -118,9 +136,10 @@
     <th>Subway</th>
     <th>Olives</th>
     <th>Mungle</th>
+    <th>Latenite@Lag</th>
   </tr>
   <tr>
-    <td>Mon-Fri</td>
+    <td>Mon-Thurs</td>
     <td>9a-6p</td>
     <td>11a-2a</td>
     <td>7:30a-7p</td>
@@ -128,6 +147,18 @@
     <td>9a-7p</td>
     <td>7:30a-4p</td>
     <td>8a-8p</td>
+    <td>9:30p-2:30a</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>9a-6p</td>
+    <td>11a-2a</td>
+    <td>7:30a-7p</td>
+    <td>11a-2p</td>
+    <td>9a-7p</td>
+    <td>7:30a-4p</td>
+    <td>8a-8p</td>
+    <td><font color="red">CLOSED</font></td>
   </tr>
   <tr>
     <td>Saturday</td>
@@ -138,6 +169,7 @@
     <td>11a-4p</td>
     <td><font color="red">CLOSED</font></td>
     <td>11a-5p</td>
+    <td><font color="red">CLOSED</font></td>
   </tr>
   <tr>
     <td>Sunday</td>
@@ -148,6 +180,7 @@
     <td>11a-4p</td>
     <td><font color="red">CLOSED</font></td>
     <td>11a-5p</td>
+    <td>9:30p-2:30a</td>
   </tr>
 </table>
 
