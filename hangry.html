@@ -17,7 +17,7 @@
       document.write("Lag opens at 10AM.");
     } else if (date.getHours() >= 11 && date.getHours() <= 13) {
       document.write("Go to Ricker.");
-    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+    } else if (date.getHours() >= 17 && date.getHours() < 19) {
       document.write("Go to Ricker.");
     } else if (date.getHours() >= 22) {
       document.write("Go to Latenite!");
@@ -28,9 +28,9 @@
     //Saturday
       if (date.getHours() <= 9) {
       document.write("Ricker is closed today! Arrillaga opens at 9:30AM.");
-    } else if (date.getHours() >= 11 && date.getHours() <= 13) {
+    } else if (date.getHours() >= 11 && date.getHours() < 13) {
       document.write("Ricker is closed today! Go to Wilbz!");
-    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+    } else if (date.getHours() >= 17 && date.getHours() < 19) {
       document.write("Ricker is closed today! Go to Stern!");
     } else {
       document.write("Ricker is closed today. Check the table below.");
@@ -39,11 +39,11 @@
     //Mon-Thurs
     if (date.getHours() <= 7) {
       document.write("All major dining halls open at 7:30AM today.");
-    } else if (date.getHours() >= 12 && date.getHours() <= 13) {
+    } else if (date.getHours() >= 12 && date.getHours() < 13) {
       document.write("Ricker's open now! Or, ya know, Stern.");
-    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+    } else if (date.getHours() >= 17 && date.getHours() < 19) {
       document.write("Ricker's open now! Or, ya know, Stern.");
-    } else if (date.getHours() >= 19 && date.getHours() <= 21) {
+    } else if (date.getHours() >= 19 && date.getHours() < 21) {
       document.write("Arrillaga closes at 9PM every day. Run!");
     } else if (date.getHours() >= 22) {
       document.write("Go to Latenite!");
@@ -56,9 +56,9 @@
       document.write("Go to Latenite!");
     } else if (date.getHours() <= 7) {
       document.write("Ricker is closed today! Other dining halls open at 7:30AM.");
-    } else if (date.getHours() >= 12 && date.getHours() <= 13) {
+    } else if (date.getHours() >= 12 && date.getHours() < 13) {
       document.write("Ricker is closed today! Go to Wilbz!");
-    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+    } else if (date.getHours() >= 17 && date.getHours() < 19) {
       document.write("Ricker is closed today! Go to Stern!");
     } else {
       document.write("Ricker is closed today. Check the table below.");
