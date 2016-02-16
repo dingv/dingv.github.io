@@ -5,6 +5,22 @@
 </head>
 <body>
 
+<script language="JavaScript">
+  var date = new Date();
+  
+  if (date.getDay() >= 1 && date.getDay() <= 4) {
+    document.write("You're in luck; everything's open today!");
+  } else if (date.getDay() == 5) {
+    document.write("Closed today (Friday): FloMo, Ricker");
+  } else if (date.getDay() == 6) {
+    document.write("Closed today (Saturday): Branner, FloMo, Manz, Ricker; Forbes, Alumni Cafe, Heirlooms + Co, Olives");
+  } else if (date.getDay() == 0) {
+    document.write("Closed today (Sunday): Branner, Manz; Forbes, Alumni Cafe, Heirlooms + Co, Olives")
+  }
+  
+  
+</script>
+
 <h1>I Haz Swipes</h1>
 <table border="1" style="width:100%">
   <tr>
