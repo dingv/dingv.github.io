@@ -5,21 +5,41 @@
 </head>
 <body>
   
-  <h1>On this day of the week:</h1>
+  <h1>I'm hungry RIGHT NOW:</h1>
+  
+  (Recommendations are tailored to West Campus residents.)
 
 <script language="JavaScript">
   var date = new Date();
-  
-  if (date.getDay() >= 1 && date.getDay() <= 4) {
-    document.write("You're in luck; everything's open today!");
-  } else if (date.getDay() == 5) {
-    document.write("Closed today (Friday): FloMo, Ricker");
+  if (date.getDay() == 0) {
+    //Sunday
+    if (date.getHours() <= 10) {
+      document.write("Lag opens at 10AM.");
+    } else if (date.getHours() >= 11 && date.getHours() <= 1) {
+      document.write("Go to Ricker.");
+    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+      document.write("Go to Ricker.");
+    } else {
+      document.write("Not very exciting right now. Check the table below.");
+    }
   } else if (date.getDay() == 6) {
-    document.write("Closed today (Saturday): Branner, FloMo, Manz, Ricker; Forbes, Alumni Cafe, Heirlooms + Co, Olives");
-  } else if (date.getDay() == 0) {
-    document.write("Closed today (Sunday): Branner, Manz; Forbes, Alumni Cafe, Heirlooms + Co, Olives")
+    //Saturday
+    if (date.getHours() <= 9) {
+      document.write("Arrillaga opens at 9:30AM.");
+    } else if (date.getHours() >= 11 && date.getHours() <= 1) {
+      document.write("Go to Wilbz!");
+    } else if (date.getHours() >= 17 && date.getHours() <= 19) {
+      document.write("Go to Stern!");
+    } else {
+      document.write("Not very exciting right now. Check the table below.");
+    }
+  } else if (date.getDay() == 1) {
+    if (date.getHours() < 21) {
+      document.write("Test");
+    }
+  } else {
+    document.write("oops");
   }
-  
   
 </script>
 
