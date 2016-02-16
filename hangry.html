@@ -62,6 +62,8 @@
     //Mon-Thurs
     if (date.getHours() <= 2) {
       document.write("Go to Latenite!");
+    } else if (date.getHours() >= 8 && date.getHours() <= 9) {
+      document.write("Ricker's open now!");
     } else if (date.getHours() >= 3 && date.getHours() <= 7) {
       document.write("All major dining halls open at 7:30AM today.");
     } else if (date.getHours() >= 12 && date.getHours() < 13) {
