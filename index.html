@@ -7,32 +7,7 @@
 </head>
 
 <body>
-<b>A Crash Course in Machine Learning Fundamentals</b><br>
-Valerie Ding, Stanford University<br>
-<br>
-<b>In a sentence,</b> this is a high-level overview of fundamental terminology, concepts, and techniques in machine learning.<br>
-I will start by describing each paradigm in layman's terms, then outline the mathematical intuition and practical applications.<br>
-<br>
-<b>What is machine learning?</b><br>
-Think back to when you were a child, first learning the alphabet. Perhaps you had stickers, magnets, or posters in your classroom. The letters might have been in different fonts, colors, or sizes, but over time, you were <b>trained</b> to recognize the similarities and <b>classify</b> the letters as A, B, C, etc. even if, for example, a black sans serif "A" looked wholly different from a red cursive "A".<br>
-<br>
-Indeed, this was a seminal result in early machine learning: literally teaching a computer how to recognize characters in images (optical character recognition), emulating the process of teaching a child how to read. Now you can take a picture of a document with your phone and convert it to an electronic typed document, because we have figured out how to get machines to recognize characters from images.<br>
-<br>
-Optical character recognition is just one, early example of machine learning. The takeaway is that we are developing <b>learning models for machines</b> by which the machines can use input information to learn about data, helping us make decisions, discoveries, and processes more efficient in a wide range of fields such as information security, medicine, and automated machinery.<br>
-<br>
-<b>Supervised learning</b><br>
-Supervised learning is one of the most common paradigms in machine learning. We give the computer a set of <b>training data</b>, which is a set of <b>features</b> and <b>labels</b>. For example, let's say we are trying to teach the computer to flag suspicious credit card activity to detect credit card fraud. Some <b>features</b> used in our learning model might be transaction amount, location, and vendor type. Then, each <b>training example</b> (e.g. $20 spent on groceries at 3PM at the Safeway in Menlo Park) is accompanied by a <b>label</b> (e.g. yes, this was an actual transaction by the credit card owner) in the training data. Now we can train our computer on these training examples: we can train our model to <b>weight</b> the features by importance by <b>minimizing a loss function</b> (also known as a cost or objective function, this means we are trying to optimally quantify a general model for our training data by bringing results as close as possible to the actual labels). Then, when we apply the model to make predictions on a <b>test set</b>, we are putting our model out into the field and seeing how it performs on data where we don't know the answers (e.g. is this new transaction of $100 spent at 2AM on candles at a Walmart in Kentucky legitimate?) using the model that we tuned over the training set. This is the foundation of supervised learning.<br>
-<br>
-A central concept in supervised learning is whether the problem is one of <b>classification</b> or <b>regression</b>. Classification problems have discrete outputs (e.g. classifying characters in OCR, or boolean yes/no credit card authentication), while regression problems have continuous outputs (e.g. stock price predictions). Common fundamental paradigms in modeling regression problems are <b>logistic regression</b> and <b>gradient descent</b>; in classification, <b>Naive Bayes</b> (features assumed independent from each other) and <b>Support Vector Machines</b> (maximizes the margin attempting to separate classes); the important takeaway in understanding supervised learning approaches is that predictions are driven by <b>maximizing the likelihood</b> and <b>minimizing the objective function</b>, making predictions based on probabilistic models that are trained on existing data and known answers.<br>
-<br>
-<b>Unsupervised learning</b><br>
-In unsupervised learning, we are trying to find structure in data. Rather than making classification or regression predictions, we are trying to find patterns in the data itself. For example, the <b>k-means clustering algorithm</b> maintains a set of k <b>cluster centroids</b> that it iteratively updates until convergence, by assigning each data point to its closest centroid and then updating each centroid to be the mean of the data points assigned to it. 
-<br>
-Some applications of clustering are object recognition and in bioinformatics such as cancer detection.<br>
-<br> 
-<b>Deep learning</b><br>
-Deep learning techniques are foundationally <b>neural networks</b> with multiple <b>hidden layers</b>. This means that features are processed and optimized over multiple internal layers, allowing us to parse data with greater complexity and find structure at different levels of abstraction. This is especially helpful in dealing with large-scale unlabeled datasets. A fundamental paradigm in deep learning is <b>backpropagation</b>. To understand this conceptually, first understand that <b>forward propagation</b> is the process of transforming input to final output; the input is passed through each layer of the deep neural network to land on an output; then, to minimize the error, we use backpropagation to determine each layer's contribution to the overall error. Now we have landed on an optimization problem to optimize weights to minimize loss.
-
+	<a href="dingv-ml.pdf">Machine Learning Primer, Dec 2017</a>
 </body>
 
 </html>
