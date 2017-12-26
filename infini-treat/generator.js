@@ -15,7 +15,7 @@ function generate() {
 	} else {
 		basket[treat] = 1;
 	}
-	document.getElementById("treat").innerHTML = treats[rindex];
+	document.getElementById("treat").innerHTML = treat;
 	
 	baskettxt = "";
 	for (var k in basket) {
