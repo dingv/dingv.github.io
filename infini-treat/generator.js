@@ -6,7 +6,9 @@ function generate() {
 	"Mr. Goodbar",
 	"Crunch Bar", 
 	"Raisins",
-	"Dum Dum"];
+	"Dum Dum",
+	"Skittles",
+	"Ghirardelli"];
 	
 	var rindex = Math.floor(Math.random() * treats.length);
 	treat = treats[rindex];
