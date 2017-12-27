@@ -8,7 +8,18 @@ var treats =
 "Raisins",
 "Dum Dum",
 "Skittles",
-"Ghirardelli"];
+"Ghirardelli",
+"Reese's",
+"3 Musketeers",
+"Twix",
+"Almond Joy",
+"Airhead",
+"Nerds",
+"Swedish Fish",
+"Milky Way",
+"100 Grand",
+"Take 5",
+"Candy Corn"];
 
 function generate() {
 	var rindex = Math.floor(Math.random() * treats.length);
