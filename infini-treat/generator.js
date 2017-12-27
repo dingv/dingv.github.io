@@ -19,7 +19,9 @@ var treats =
 "Milky Way",
 "100 Grand",
 "Take 5",
-"Candy Corn"];
+"Candy Corn",
+"M&Ms",
+"Sour Punch Straws"];
 
 function generate() {
 	var rindex = Math.floor(Math.random() * treats.length);
