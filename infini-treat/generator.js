@@ -1,15 +1,16 @@
 var basket = {};
 
+var treats = 
+["Butterfinger", 
+"KitKat", 
+"Mr. Goodbar",
+"Crunch Bar", 
+"Raisins",
+"Dum Dum",
+"Skittles",
+"Ghirardelli"];
+
 function generate() {
-	var treats = ["Butterfinger", 
-	"KitKat", 
-	"Mr. Goodbar",
-	"Crunch Bar", 
-	"Raisins",
-	"Dum Dum",
-	"Skittles",
-	"Ghirardelli"];
-	
 	var rindex = Math.floor(Math.random() * treats.length);
 	treat = treats[rindex];
 	if (basket.hasOwnProperty(treat)) {
@@ -17,7 +18,7 @@ function generate() {
 	} else {
 		basket[treat] = 1;
 	}
-	document.getElementById("treat").innerHTML = treat;
+	document.getElementById("treat").innerHTML = "<img src=" + "\"img/" + treat + ".jpg\">";
 	
 	baskettxt = "";
 	for (var k in basket) {
