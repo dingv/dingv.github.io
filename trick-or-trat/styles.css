@@ -1,0 +1,33 @@
+html {
+	width:100%;
+	height:100%;
+}
+
+body {
+	width:100%;
+	height:100%;
+	display:block;
+	text-align:center;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.button {
+	background-color:#f47742;
+	color:black;
+	text-align:center;
+	border-radius:4px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size:16px;
+    padding:15px 32px;
+}
+
+.button:hover {
+	background-color:white;
+	color:#f47742;
+}
+
+img {
+	height:100px;
+}
