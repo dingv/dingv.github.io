@@ -7,7 +7,6 @@
 	<title>Stream</title>
 </head>
 
-
 <body>
 	<p>
 	This is an ephemeral <b>stream</b>-of-consciousness tool.<br>
@@ -15,11 +14,10 @@
 	Start typing as if you are messaging someone,<br>
 	but don't worry, you are the only one who can see your messages.<br>
 	Type into the textbox and press <b>Enter</b> to send.<br>
-	Click the <b>Clear</b> button to start over.
+	Type <b>:clear</b> to clear all your messages and start over. 
 	</p>
 	<input size="100" type="text" id="message" onkeydown="if (event.keyCode == 13) pressEnter();"></input>
 	<p id="output"></p>
-	<button type="button" class="button" onclick="clearf()">Clear</button>
 	<script src=script.js></script>
 </body>
 
