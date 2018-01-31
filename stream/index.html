@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Stream</title>
+</head>
+
+
+<body>
+	<p>
+	This is an ephemeral <b>stream</b>-of-consciousness tool.<br>
+	You are completely anonymous.<br>
+	Start typing as if you are messaging someone,<br>
+	but don't worry, you are the only one reading your messages.<br>
+	Type into the textbox and press <b>Enter</b> to send.<br>
+	Click the <b>Clear</b> button to start over.
+	</p>
+	<input size="100" type="text" id="message" onkeydown="if (event.keyCode == 13) pressEnter();"></input>
+	<p id="output"></p>
+	<button type="button" class="button" onclick="clearf()">Clear</button>
+	<script src=script.js></script>
+</body>
+
+</html>
