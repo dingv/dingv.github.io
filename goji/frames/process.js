@@ -8,7 +8,7 @@ var frames = [
 ['card','img/JohnQuincyAdams.jpg', '6: John Quincy Adams, 1825-1829', 100],
 ['essay','Name a U.S. President.', 100, 200],
 ['product','img/pencil.jpg', 'Presidential Pencil', -500],
-['card','img/complete.jpg', 'Task complete!', 100],
+['card','img/complete.jpg', 'Task complete!', 0],
 ]
 var badges = [
 ['badge','Just Getting Started', 'score', 200],
